@@ -1,0 +1,282 @@
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .header {
+        &__promo {
+            display: block;
+            text-align: center;
+            img {
+                margin-top: 40px;
+            }
+        }
+        &__descr {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+    .map {
+        &__bg {
+            svg {
+                width: 960px;
+            }
+        }
+        &__company {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .reviews {
+        &__card {
+            bottom: -151px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 829px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .header {
+        &__menu {
+            .nav {
+                display: none;
+            }
+        }
+        &__card {
+            padding: 50px 12px 50px 0;
+            justify-content: space-between;
+        }
+        &__descr {
+            width: auto;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            display: block;
+            text-align: center;
+        }
+        &__descr {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__list {
+            width: 245px;
+            margin: 0 auto;
+            text-align: start;
+        }
+    }
+    .plan {
+        &__wrapper {
+            display: block;
+        }
+        &__card {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 20px;
+            height: 655px;
+            padding: 50px 50px 45px 50px;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+            &_list {
+                width: 200px;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+        }
+    }
+    .map {
+        &__bg {
+            margin-top: 0;
+            svg {
+                width: 720px;
+            }
+        }
+    }
+    .reviews {
+        &__box {
+            display: none;
+        }
+        .prev {
+            right: auto;
+            left: 0;
+        }
+        &__card {
+            max-width: 620px;
+            bottom: -175px;
+            padding: 35px 40px 35px 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .header {
+        &__promo {
+            img {
+                width: 540px;
+            }
+        }
+        &__list {
+            display: block;
+            height: 100%;
+            max-height: none;
+        }
+        &__card {
+            border: none;
+            padding: 0px 0 40px 0;
+            &_text {
+                text-align: right;
+            }
+        }
+    }
+    .plan {
+        &__descr {
+            width: auto;
+        }
+    }
+    .map {
+        &__bg {
+            svg {
+                width: 540px;
+                height: 400px;
+            }
+        }
+        &__descr {
+            width: auto;
+        }
+    }
+    .reviews {
+        &__card {
+            display: block;
+            text-align: center;
+            max-width: 450px;
+            &_subtitle {
+                margin: 0 auto;
+            }
+            &_btn {
+                margin-top: 10px;
+            }
+        }
+        &__descr {
+            width: auto;
+        }
+    }
+    .footer {
+        &__wrapper {
+            display: block;
+            text-align: center;
+        }
+        &__item {
+            &_social {
+                justify-content: center;
+            }
+            &_subtitle {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    .header {
+        padding: 20px 10px 0 10px;
+        &__promo {
+            margin-top: 55px;
+            img {
+                width: 280px;
+            }
+        }
+        &__descr {
+            width: auto;
+        }
+        &__menu {
+            display: block;
+            text-align: center;
+
+        }
+        &__logo {
+            margin-bottom: 20px;
+        }
+        &__list {
+            padding: 20px;
+            margin-top: 50px;
+        }
+        &__card {
+            padding: 0 0 20px 0;
+        }
+        &__title {
+            font-size: 33px;
+            line-height: 36px;
+        }
+    }
+    .advantages {
+        padding: 0 10px 0 10px;
+        &__bg {
+            width: 280px;
+        }
+        &__descr {
+            width: auto;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 33px;
+        }
+    }
+    .plan {
+        padding: 0 10px 0 10px;
+        &__card {
+            width: auto;
+        }
+    }
+    .map {
+        padding: 20px 10px 0 10px;
+        &__bg {
+            svg {
+                width: 280px;
+                height: 250px;
+            }
+        }
+        &__descr {
+            width: auto;
+        }
+    }
+    .reviews {
+        &__descr {
+            width: auto;
+        }
+        &__slider {
+            .slick-slide {
+                width: 280px;
+                height: 320px;
+            }
+            &_item {
+                height: 320px;
+            }
+            .next, .prev {
+                top: 400px;
+            }
+        }
+        &__card {
+            max-width: 210px;
+            padding: 35px 40px 55px 40px;
+            &_subtitle {
+                font-size: 30px;
+                width: auto;
+            }
+            &_btn {
+                width: 210px;
+            }
+        }
+    }
+}
+
