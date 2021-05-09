@@ -1,0 +1,174 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	color: #353333;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hamburger {
+	width: 30px;
+	cursor: pointer;
+	display: none;
+	span {
+		display: block;
+		width: 30px;
+		height: 3px;
+		margin-top: 5px;
+		background-color: #353333;
+		&:nth-child(1) {
+			margin-top: 0;
+		}  
+	}
+}
+
+.slider-arrow {
+	position: absolute;
+	top: 232px;
+	left: -50px;
+	z-index: 10;
+	&__right {
+		left: auto;
+		right: -62px;
+	}
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(#000, 0.4);
+	z-index: 51;
+}
+
+.menu {
+	width: 40%;
+	height: 100vh;
+	background-color: #fff;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 52;
+	transition: all 0.5s;
+	transform: translateX(-200%);
+	.header__wrapper-items {
+		display: block;
+		padding-top: 50px;
+	}
+	.header__wrapper-item {
+		font-size: 24px;
+		margin-top: 20px;
+	}
+	&__contact {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&__call {
+		font-weight: 500;
+		color: #353333;
+		font-size: 18px;
+		text-align: center;
+		position: relative;
+		&:before {	
+			content: "";
+			background-image: url('../img/call.png');
+			background-repeat: no-repeat;
+			background-position: center;
+			display: block;
+			width: 32px;
+    		height: 30px;
+    		position: absolute;
+    		top: -4px;
+    		left: -32px;
+		}
+	}
+	&__social {
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	&__close {
+		font-size: 40px;
+		position: absolute;
+	    top: 20px;
+	    right: -30px;
+	    line-height: 0px;
+	}
+}
+
+.cart {
+	display: none;
+	position: fixed;
+	padding: 35px 20px 20px 20px;
+	z-index: 12;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 40px;
+	width: 360px;
+	height: 370px;
+	background: rgb(241,185,130);
+	transition: all 0.5s;
+	background: linear-gradient(180deg, rgba(241,185,130,1) 0%, rgba(248,158,68,1) 100%);
+	&__title {
+		font-size: 22px;
+		color: #fff;
+		text-align: center;
+		font-weight: 400;
+	}
+	&__close {
+		font-size: 40px;
+		position: absolute;
+	    top: 28px;
+	    color: #fff;
+	    right: 20px;
+	    line-height: 0px;
+	}
+	&__form {
+		margin-top: 18px;
+		&-input {
+			display: block;
+			width: 320px;
+			height: 35px;
+			border: none;
+			margin-bottom: 12px;
+			font-weight: 400;
+			font-size: 12px;
+			padding-left: 12px;
+			&:nth-child(3) {
+				margin-bottom: 0;
+				height: 135px;
+				padding-bottom: 100px;
+			}
+		}
+		&-btn {
+			display: block;
+			width: 160px;
+			height: 35px;
+			border: none;
+			background-color: #6c6a69;
+			color: #fff;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 15px;
+			font-weight: 400;
+			font-size: 12px;
+		}
+	}
+}
+

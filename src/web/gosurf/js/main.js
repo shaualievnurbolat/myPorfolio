@@ -155,17 +155,18 @@ $(function () {
         });
 
     });
+
     $('input').keydown(function (e) {
         console.log(e.key);
         e.preventDefault()
     });
+    
     $('.surfboard-box__circle').on('click', function () {
         $(this).toggleClass('circle-active')
     });
 
     $('.menu-btn').on('click', function () {
         $('.menu, .menu-btn__line, .menu-btn').toggleClass('active')
-
     });
 
 
